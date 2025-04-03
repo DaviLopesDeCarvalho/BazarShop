@@ -1,4 +1,5 @@
-Projeito criado para a matéria de Programação para Dispositivos Móveis com o tema livre , onde o tema escolido foi: Bazar Online 
+Projeito criado para a matéria de Programação para Dispositivos Móveis com o tema livre , onde o tema escolido foi: Bazar Online
+
 O Bazar Online é um aplicativo desenvolvido com React Native e Expo para facilitar a compra e venda de produtos usados. 
 
 Funcionalidades:
