@@ -10,13 +10,6 @@ Publicação de produtos com descrição, preço e imagens.
 
 Filtros de busca por categoria, preço.
 
-Tecnologias Utilizadas:
-React Native: Framework para o desenvolvimento do aplicativo.
-
-Expo: Ferramenta para facilitar o desenvolvimento e a custrução do app.
-
-React Navigation: Biblioteca para navegação entre telas.
-
 Instalação e Execução:
 
 Clone este repositório: git clone https://github.com/DaviLopesDeCarvalho/BazarShop.git
@@ -32,6 +25,15 @@ npx expo install @expo-google-fonts/quicksand
 Execute o projeto no Expo:
 
 npx expo start
+
+Tecnologias Utilizadas:
+
+React Native: Framework para o desenvolvimento do aplicativo.
+
+Expo: Ferramenta para facilitar o desenvolvimento e a custrução do app.
+
+React Navigation: Biblioteca para navegação entre telas.
+
 
 Desenvolvido com 💙 por Davi Lopes de Carvalho
 
