@@ -8,7 +8,7 @@ Cadastro e login de usuários.
 
 Publicação de produtos com descrição, preço e imagens.
 
-Filtros de busca por categoria, preço 
+Filtros de busca por categoria, preço.
 
 Tecnologias Utilizadas:
 React Native: Framework para o desenvolvimento do aplicativo.
