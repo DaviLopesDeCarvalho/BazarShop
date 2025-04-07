@@ -2,13 +2,11 @@ Projeito criado para a matéria de Programação para Dispositivos Móveis com o
 
 O Bazar Online é um aplicativo desenvolvido com React Native e Expo para facilitar a compra e venda de produtos usados. 
 
-Funcionalidades:
+Instale as dependências: 
 
-Cadastro e login de usuários.
+npm install @react-navigation/native @react-navigation/native-stack react-native-gesture-handler react-native-reanimated react-native-screens react-native-safe-area-context @react-native-community/masked-view
 
-Publicação de produtos com descrição, preço e imagens.
-
-Filtros de busca por categoria, preço.
+npx expo install @expo-google-fonts/quicksand
 
 Instalação e Execução:
 
@@ -16,15 +14,17 @@ Clone este repositório: git clone https://github.com/DaviLopesDeCarvalho/BazarS
 
 Acesse a pasta do projeto: cd BazarShop
 
-Instale as dependências: 
-
-npm install @react-navigation/native @react-navigation/native-stack react-native-gesture-handler react-native-reanimated react-native-screens react-native-safe-area-context @react-native-community/masked-view
-
-npx expo install @expo-google-fonts/quicksand
-
 Execute o projeto no Expo:
 
 npx expo start
+
+Funcionalidades:
+
+Cadastro e login de usuários.
+
+Publicação de produtos com descrição, preço e imagens.
+
+Filtros de busca por categoria, preço.
 
 Tecnologias Utilizadas:
 
@@ -36,4 +36,3 @@ React Navigation: Biblioteca para navegação entre telas.
 
 
 Desenvolvido com 💙 por Davi Lopes de Carvalho
-
