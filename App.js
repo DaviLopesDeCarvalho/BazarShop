@@ -12,6 +12,10 @@ import CalcadosScreem from './pages/Calcados';
 import CelularesTabletsScreem from './pages/Celulares_tablets';
 import ComputadoresAcessoriosScreem from './pages/Computadores';
 import VideogamesConsolesScreem from './pages/Videogames';
+import LoginScreem from './pages/Login';
+import CadastroScreem from './pages/Cadastro';
+import CadastrarProdutoScreen from './pages/CadastrarProduto';
+
 
 
 const Stack = createNativeStackNavigator();
@@ -46,6 +50,18 @@ const HomeScreen = ({ navigation }) => {
 
   return (
     <ScrollView>
+      <View style={styles.menuContainer}>
+        <TouchableOpacity style={styles.menuButton} onPress={() => navigation.navigate('Login')}>
+          <Text style={styles.menuText}>Login</Text>
+        </TouchableOpacity>
+        <TouchableOpacity style={styles.menuButton} onPress={() => navigation.navigate('Cadastro')}>
+          <Text style={styles.menuText}>Cadastro</Text>
+        </TouchableOpacity>
+        <TouchableOpacity style={styles.menuButton} onPress={() => navigation.navigate('Cadastro Produto')}>
+          <Text style={styles.menuText}>Cadastrar Produto</Text>
+        </TouchableOpacity>
+      </View>
+
       <View style={styles.bordacard}>
         <Text style={styles.header}>Moda & Acessórios</Text>
         <Text style={styles.descricaoHeader}>
@@ -114,20 +130,27 @@ export default function App() {
         <Stack.Screen name="Celulares e Tablets" component={CelularesTabletsScreem} />
         <Stack.Screen name="Computadores e Acessórios" component={ComputadoresAcessoriosScreem} />
         <Stack.Screen name="Video Games e Consoles" component={VideogamesConsolesScreem} />
+        <Stack.Screen name="Login" component={LoginScreem} />
+        <Stack.Screen name="Cadastro" component={CadastroScreem} />
+        <Stack.Screen name="Cadastro Produto" component={CadastrarProdutoScreen} />
+
+
       </Stack.Navigator>
     </NavigationContainer>
   );
 }
 
 const styles = StyleSheet.create({
+
   card: {
     padding: 15,
     borderRadius: 10,
     backgroundColor: '#eaeaea',
-    shadowOffset: { width: 0, height: 3 },
+    shadowRadius: 4,
     marginBottom: 15,
     width: 350,
-    elevation: 7,
+    borderColor: '#000000',
+    borderWidth: 2
   },
 
   cardContent: {
@@ -144,7 +167,7 @@ const styles = StyleSheet.create({
 
   header: {
     fontFamily: 'Quicksand_700Bold',
-    marginTop: 15,
+    marginTop: 8,
     marginBottom: 10,
     marginLeft: 15,
     textAlign: 'center',
@@ -161,7 +184,9 @@ const styles = StyleSheet.create({
     width: 356,
     flex: 1,
     borderRadius: 10,
-    shadowOffset: { width: 0, height: -3},
+    shadowRadius: 4,
+    borderColor: '#000000',
+    borderWidth: 2,
     backgroundColor: '#eaeaea',
     padding: 10,
     alignItems: 'center',
@@ -202,6 +227,28 @@ const styles = StyleSheet.create({
 
   buttonText: {
     justifyContent: 'center',
+    fontFamily: 'Quicksand_600SemiBold',
+
+  },
+
+  menuContainer: {
+    flexDirection: 'row',
+    justifyContent: 'center',
+    margin: 8,
+  },
+
+  menuButton: {
+    backgroundColor: 'cyan',
+    padding: 4,
+    borderRadius: 8,
+    marginLeft: 5,
+    width: 120,
+    height: 40,
+    alignItems: 'center',
+  },
+
+  menuText: {
+    textAlign: 'center',
     fontFamily: 'Quicksand_600SemiBold',
 
   },
