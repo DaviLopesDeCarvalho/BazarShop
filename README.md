@@ -6,6 +6,10 @@ Instale as dependências:
 
 npm install @react-navigation/native @react-navigation/native-stack react-native-gesture-handler react-native-reanimated react-native-screens react-native-safe-area-context @react-native-community/masked-view
 
+npm install @react-native-picker/picker --save
+
+npm install @react-native-community/slider --save
+
 npx expo install @expo-google-fonts/quicksand
 
 Instalação e Execução:
