@@ -1,9 +1,11 @@
+// src/navigation/DrawerNavigator.js
 import React from 'react';
 import { createDrawerNavigator } from '@react-navigation/drawer';
 import { MaterialIcons } from '@expo/vector-icons';
 import Home from '../screens/Home.js';
 import Perfil from '../screens/Perfil';
-import { View, Text} from 'react-native';
+import CadastrarProdutoScreen from '../screens/CadastrarProduto.js';
+import { View, Text } from 'react-native';
 import { auth } from '../services/firebase';
 
 const Drawer = createDrawerNavigator();
@@ -46,6 +48,15 @@ export default function DrawerNavigator() {
         options={{
           drawerIcon: ({ color, size }) => (
             <MaterialIcons name="person" size={size} color={color} />
+          ),
+        }}
+      />
+      <Drawer.Screen
+        name="Cadastrar Produto"
+        component={CadastrarProdutoScreen}
+        options={{
+          drawerIcon: ({ color, size }) => (
+            <MaterialIcons name="add-box" size={size} color={color} />
           ),
         }}
       />
