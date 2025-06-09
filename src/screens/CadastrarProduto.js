@@ -34,7 +34,7 @@ export default function CadastrarProdutoScreen() {
 
     await addDoc(collection(db, 'produtos'), novoProduto);
 
-    alert('Produto salvo com sucesso no Firebase!');
+    alert('Produto salvo com sucesso!');
     setNome('');
     setDescricao('');
     setPreco('');
