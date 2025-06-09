@@ -59,6 +59,7 @@ const styles = StyleSheet.create({
   container: { 
     padding: 10,
     alignItems: 'center',
+    backgroundColor: "#ffff"
   },
   card: {
     flexDirection: 'row',
