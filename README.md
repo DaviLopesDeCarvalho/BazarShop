@@ -48,6 +48,7 @@ git clone https://github.com/DaviLopesDeCarvalho/BazarShop.git
 cd BazarShop
 
 2. Instale as dependências:
+```shell
 npm install @react-navigation/native @react-navigation/native-stack
 npm install react-native-gesture-handler react-native-reanimated
 npm install react-native-screens react-native-safe-area-context
@@ -55,8 +56,8 @@ npm install @react-native-community/masked-view
 npm install @react-native-picker/picker @react-native-community/slider
 npx expo install @expo-google-fonts/quicksand
 npm install firebase
-
-3. Execute o projeto:
+```
+4. Execute o projeto:
 npx expo start
 
 -- 📱 Protótipo (Figma):
@@ -66,3 +67,4 @@ https://www.figma.com/design/SbSKaijWwUxROxQoIgBUo6/Prot%C3%B3tipo-N%C3%A3o-Func
 
 👤 Autor:
 Desenvolvido com 💙 por Davi Lopes de Carvalho
+
